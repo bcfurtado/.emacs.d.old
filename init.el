@@ -128,7 +128,7 @@
 ;; Dark Themes
 ;; ==================================================
 ;; (use-package material-theme :ensure t :init (load-theme 'material :no-confirm))
-(use-package monokai-theme :ensure t :init (load-theme 'monokai :no-confirm))
+;; (use-package monokai-theme :ensure t :init (load-theme 'monokai :no-confirm))
 ;; (use-package spacemacs-theme :ensure t :init (load-theme 'spacemacs-dark :no-confirm))
 ;; (use-package solarized-theme :ensure t :init (load-theme 'solarized-dark :no-confirm))
 ;; (use-package molokai-theme :ensure t :init (load-theme 'molokai :no-confirm))
@@ -141,6 +141,15 @@
 ;; (use-package gruvbox-theme :ensure t :init (load-theme 'gruvbox :no-confirm))
 ;; (use-package zenburn-theme :ensure t :init (load-theme 'zenburn :no-confirm))
 ;; (use-package tangotango-theme :ensure t :init (load-theme 'tangotango :no-confirm))
+
+(use-package doom-themes
+  :ensure t
+  :config
+  (setq doom-themes-enable-bold t
+        doom-themes-enable-italic t)
+  :init
+  (load-theme 'doom-one :no-confirm)
+  (doom-themes-visual-bell-config))
 
 ;; Light Themes
 ;; ==================================================
