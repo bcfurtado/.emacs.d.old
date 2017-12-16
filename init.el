@@ -929,3 +929,10 @@
   :config
   (require 'no-easy-keys)
   (no-easy-keys 1))
+
+(use-package vue-mode
+  :ensure t)
+
+(use-package browse-at-remote
+  :bind (("C-c C-g" . browse-at-remote))
+  :ensure t)
