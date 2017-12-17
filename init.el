@@ -148,8 +148,10 @@
   (setq doom-themes-enable-bold t
         doom-themes-enable-italic t)
   :init
-  (load-theme 'doom-one :no-confirm)
-  (doom-themes-visual-bell-config))
+  (load-theme 'doom-molokai t)
+  (doom-themes-visual-bell-config)
+  (doom-themes-org-config))
+
 
 ;; Light Themes
 ;; ==================================================
