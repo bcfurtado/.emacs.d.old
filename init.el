@@ -926,12 +926,6 @@
 (use-package less-css-mode
   :ensure t)
 
-(use-package no-easy-keys
-  :load-path "vendor/no-easy-keys"
-  :config
-  (require 'no-easy-keys)
-  (no-easy-keys 1))
-
 (use-package vue-mode
   :ensure t)
 
