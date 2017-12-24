@@ -789,7 +789,7 @@
   :config
   (setq js2-basic-offset 2)
   (add-hook 'js2-mode-hook 'js2-imenu-extras-mode)
-  (bind-key "M-j" 'join-line-or-lines-in-region js2-mode-map))
+  (bind-key "M-j" (λ (join-line -1)) js2-mode-map))
 
 (use-package json-mode
   :ensure t
