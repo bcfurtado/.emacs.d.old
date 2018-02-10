@@ -462,7 +462,6 @@
       )
   )
 
-
 (use-package projectile
   :ensure t
   :init
@@ -862,37 +861,6 @@
     :ensure t
     :commands (py-autopep8-buffer))
 
-  (use-package pytest
-    :ensure t
-    :demand t
-    :bind* (:map python-mode-map
-                 ("C-c t p" . pytest-one)
-                 ("C-c t P" . copy-pytest-test-to-clipboard)
-                 ("C-c t a" . pytest-all)
-                 ("C-c t m" . pytest-module)
-                 ("C-c t d" . pytest-directory))
-    :config
-    (defun copy-pytest-test-to-clipboard ()
-      (interactive)
-      (let ((testname (pytest-py-testable)))
-        (when testname
-          (kill-new (format "py.test -x -s %s" testname))
-          (message "Copied '%s' to the clipboard." (testname)))))
-      )
-
-  (use-package nose
-    :ensure t
-    :demand t
-    :bind* (:map python-mode-map
-                 ("C-c t n" . nosetests-one)
-                 ("C-c t N" . copy-nosetest-test-to-clipboard))
-    :config
-    (defun copy-nosetest-test-to-clipboard ()
-      (interactive)
-      (let ((testname (format "%s:%s" buffer-file-name (nose-py-testable))))
-        (when testname
-          (kill-new (format "nosetests -x -s %s" testname))
-          (message "Copied '%s' to the clipboard." testname)))))
   )
 
 (use-package yaml-mode
