@@ -1,13 +1,8 @@
 # Emacs config
 
-This is my emacs configuration files. If you want to use them, the
-best thing is probably to fork the project at Github
-(<http://github.com/marcwebbie/emacs>) and then make your changes to that
-branch. This config is has a lot of ideas from:
+This is my emacs configuration files forked from marwebbie.
+(<http://github.com/marcwebbie/emacs>).
 
-* [Rejeep's](https://github.com/rejeep/emacs)
-* [Magnar's](https://github.com/magnars/.emacs.d)
-* [Purcell's](https://github.com/purcell/emacs.d)
 
 ## Installing
 
@@ -15,7 +10,7 @@ First of all make sure you have installed Emacs version 24.3 or higher.
 
 ### Fetch the config files:
 
-    git clone git://github.com/marcwebbie/emacs.git ~/.emacs.d
+    git clone --recursive git://github.com/marcwebbie/emacs.git ~/.emacs.d
 
 ### Install all packages (make sure you have [Cask](https://github.com/cask/cask) installed):
 
