@@ -1,0 +1,3 @@
+[submodule "vendor/projectile"]
+	path = vendor/projectile
+	url = https://github.com/bcfurtado/projectile
