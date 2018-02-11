@@ -449,12 +449,6 @@
   (bind-key "n" 'bm-show-next bm-show-mode-map)
   (bind-key "p" 'bm-show-prev bm-show-mode-map))
 
-(use-package tdd
-  :load-path "vendor"
-  :bind ("C-<f5>" . tdd-mode)
-  :config
-  (require 'tdd))
-
 (use-package compile
   :config
   (defadvice compilation-start (before mw-pytest-compilation-start-before (command &optional mode name-function highlight-regexp) activate)
