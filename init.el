@@ -797,10 +797,6 @@
   :ensure t
   :mode ".*\\.json")
 
-(use-package evil
-  :ensure t
-  :bind (("<f6>" . evil-mode)))
-
 (use-package python
   :init
   (require 'python)
