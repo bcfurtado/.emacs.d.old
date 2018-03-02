@@ -10,7 +10,7 @@ First of all make sure you have installed Emacs version 24.3 or higher.
 
 ### Fetch the config files:
 
-    git clone --recursive git://github.com/marcwebbie/emacs.git ~/.emacs.d
+    git clone --recursive git://github.com/bcfurtado/emacs.git ~/.emacs.d
 
 ### Install all packages (make sure you have [Cask](https://github.com/cask/cask) installed):
 
