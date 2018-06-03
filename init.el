@@ -93,6 +93,8 @@
   (setq ns-use-srgb-colorspace nil)
   )
 
+(setq x-super-keysym 'meta)
+
 
 ;;============================================================
 ;; Bootstrap
