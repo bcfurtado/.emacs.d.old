@@ -179,7 +179,7 @@
 (mw/set-best-font '(
                     ("Menlo" 15)
                     ("Inconsolata" 16)
-                    ("DejaVu Sans Mono" 15)
+                    ("DejaVu Sans Mono" 14)
                     ("Ubuntu Mono" 16)
                     ("Monaco" 15)
                     ("Roboto Mono" 14)
