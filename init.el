@@ -277,7 +277,8 @@
   (bind-key "C-c . -" 'my-decrement-number-at-point)
   )
 
-(use-package diminish)
+(use-package diminish
+  :ensure t)
 
 ;;#############################
 ;; Interface
