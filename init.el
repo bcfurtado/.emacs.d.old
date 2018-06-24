@@ -317,7 +317,7 @@
   :init
   (setq ispell-program-name (which "aspell"))
   (setq ispell-extra-args '("--sug-mode=ultra"))
-  (setq ispell-dictionary "fr_FR")
+  (setq ispell-dictionary "en_US")
   )
 
 (use-package paradox
