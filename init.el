@@ -172,7 +172,7 @@
     (let* ((fontname (car (car fonts)))
            (fontsize (car (last (car fonts))))
            (fontstring (format "%s-%d" fontname fontsize)))
-      (if (member fontname (font-family-list)) (set-frame-font fontstring)
+      (if (member fontname (font-family-list)) (set-frame-font fontstring :frames t)
         (mw/set-best-font (cdr fonts))))))
 
 
