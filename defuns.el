@@ -412,7 +412,7 @@ Otherwise point moves to beginning of line."
   (interactive)
   (let* ((module (bc/get-module-name))
          (func (which-function))
-         (command (concat "python manage.py test " module "." func)))
+         (command (concat "python manage.py test " module "." func " --no-input")))
     (projectile-test-project command)
     ))
 
