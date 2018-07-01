@@ -380,19 +380,6 @@
   (add-hook 'magit-status-mode-hook 'delete-other-windows)
   (bind-key "q" 'magit-quit-session magit-status-mode-map))
 
-(use-package git-gutter
-  :disabled t
-  :ensure t
-  :bind (("C-c v =" . git-gutter:popup-hunk) ;; show hunk diff
-         ("C-c v p" . git-gutter:previous-hunk)
-         ("C-c v n" . git-gutter:next-hunk)
-         ("C-c v s" . git-gutter:stage-hunk)
-         ("C-c v r" . git-gutter:revert-hunk))
-  :diminish git-gutter-mode
-  :init
-  (global-git-gutter-mode t)
-  )
-
 (use-package diff-hl
   :ensure t
   :demand t
